@@ -1,0 +1,22 @@
+# Load the shared object
+useDynLib(liGP, .registration=TRUE)
+
+# Exports
+export(borehole, build_ipTemplate, build_gauss_measure_ipTemplate, build_neighborhood, calc_IMSE, calc_wIMSE, giGP, herbtooth, liGP, liGP.forloop, liGP_gauss_measure, loiGP, optIP.ALC, optIP.wIMSE, qnormscale, scale_ipTemplate, scale_gauss_measure_ipTemplate)
+
+# Only import certain functions from Imports list
+import(hetGP)
+import(parallel)
+import(doParallel)
+import(foreach)
+# importFrom(lhs, randomLHS)
+importFrom(laGP, distance)
+importFrom(laGP, darg)
+importFrom(laGP, garg)
+importFrom(hetGP, cov_gen)
+# importFrom(hetGP, partial_cov_gen)
+
+## required for new CRAN checks
+importFrom("graphics", "image", "par", "plot", "points")
+importFrom("stats", "dgamma", "dist", "dnorm", "integrate", "median", "optimize", "optim", "pnorm", "qnorm", "quantile", "runif")
+
