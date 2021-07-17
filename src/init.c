@@ -4,12 +4,12 @@
 /*.C function calls */
 extern void loadX_R(void *, void *, void *);
 extern void unloadX_R();
-extern void closest_R(void *, void *, void *, void *, void *, void *);
+extern void closest_R(void *, void *, void *, void *, void *);
 
 static const R_CMethodDef CEntries[] = {
 	{"loadX_R", 	(DL_FUNC) &loadX_R, 	3},
 	{"unloadX_R",	(DL_FUNC) &unloadX_R, 	0},
-	{"closest_R", 	(DL_FUNC) &closest_R,	6},
+	{"closest_R", 	(DL_FUNC) &closest_R,	5},
 	{NULL, NULL, 0}
 };
 

@@ -131,8 +131,8 @@ XX <- matrix(seq(.01, .99, length=50))
 YY <- f1d(XX)
 
 
-n <- 80
-m <- 10
+n <- 50
+m <- 7
 int_bounds <- matrix(c(0,1))
 \donttest{
 out <- loiGP(XX=XX, X=X, Y=Y, M=m, N=n, method='wimse',

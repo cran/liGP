@@ -317,7 +317,7 @@ build_gauss_measure_ipTemplate <- function(X = NULL, Y = NULL, M, N, gauss_sd,
                          epsQ=epsQ, epsK=epsK, mult=rep_n_list$mult)$Xm,
              silent=TRUE)
   increase_epsK <- increase_epsQ <- 1
-  while (class(Xm.wimse)=='try-error' & (epsK < 1e-3 & epsQ < 1e-3)) {
+  while (class(Xm.wimse)[1]=='try-error' & (epsK < 1e-3 & epsQ < 1e-3)) {
     if (epsQ < 1e-3){
       Xm.wimse <- try(optIP.wIMSE(Xn=Xn, M=M, theta=Xnc_theta, g=g,
                              w_mean=Xc, w_var=gauss_sd^2,

@@ -1,6 +1,6 @@
 Package: liGP
 Title: Locally Induced Gaussian Process Regression
-Version: 1.0.0
+Version: 1.0.1
 Date: 2021-06-29
 Authors@R: c(person(c("D.", "Austin"), "Cole", role = c("aut", "cre"),
                      email = "austin.cole8@vt.edu"),
@@ -16,9 +16,9 @@ License: LGPL
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 NeedsCompilation: yes
-Packaged: 2021-06-30 17:43:09 UTC; austin
+Packaged: 2021-07-15 20:58:52 UTC; Austin
 Author: D. Austin Cole [aut, cre],
   Ryan B Christianson [cph],
   Robert B. Gramacy [cph]
 Repository: CRAN
-Date/Publication: 2021-07-01 07:50:09 UTC
+Date/Publication: 2021-07-17 06:00:02 UTC
